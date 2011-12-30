@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Compute SHA1 digest</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    <script src="/js/sha1.js"></script>
+  </head>
+  <body>
+    <div id="outer_container">
+    <div id="body">
+      <form name="f" action="none!">
+        &#8212; Compute a SHA1 digest &#8212;
+        <br/>
+        <br/>
+        <input id="message" type="text" size="50" name="message">
+        <br/>
+        <button type="button" onClick="f.hash.value = Sha1.hash(f.message.value)">Hash it</button>
+        <br/>
+        <br/>
+        <input type="text" size="38" name="hash" id="hash" readonly>
+      </form>
+    </div>
+    </div><!-- end outer_container -->
+  </body>
+</html>
