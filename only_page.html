@@ -2,6 +2,7 @@
   "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
     <title>Compute SHA1 digest</title>
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <script src="/js/sha1.js"></script>
@@ -13,13 +14,14 @@
         &#8212; Compute a SHA1 digest &#8212;
         <br/>
         <br/>
-        <input id="message" type="text" size="50" name="message">
+        <input id="crypt" type="password" size="2" name="crypt">
+        <input id="message" type="text" size="10" name="message">
         <br/>
-        <button type="button" onClick="f.hash.value = Sha1.hash(f.message.value)">Hash it</button>
+        <button type="button" onClick="getpass()">Hash it</button>
         <br/>
         <br/>
-        <input type="text" size="38" name="hash" id="hash" readonly>
       </form>
+      <div id="hash"></div>
     </div>
     </div><!-- end outer_container -->
   </body>

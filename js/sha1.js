@@ -1,8 +1,18 @@
+// gui11aume's part.
+getpass = function() {
+  var string = document.f.crypt.value + document.f.message.value;
+  var hash = Sha1.hash(string);
+  var start = hash.substring(0,8);
+  var end = hash.substring(8);
+  document.getElementById("hash").innerHTML = "<b>" + start + "</b>" + end;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /*  SHA-1 implementation in JavaScript | (c) Chris Veness 2002-2010 | www.movable-type.co.uk      */
 /*   - see http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html                             */
 /*         http://csrc.nist.gov/groups/ST/toolkit/examples.html                                   */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
 
 var Sha1 = {};  // Sha1 namespace
 
