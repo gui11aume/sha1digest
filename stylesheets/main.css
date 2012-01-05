@@ -5,11 +5,6 @@ body {
 h1 {
   font-size:300%;
 }
-h2 {
-  margin-top:0px;
-  font-weight:bold;
-  font-size:20;
-}
 p {
   text-indent:1em;
 }
@@ -27,6 +22,9 @@ p {
   margin-top:-50px;
   margin-left:-250px;
   text-align:center;
+}
+#crypt {
+  width:60px;
 }
 #hash {
   text-align:center;

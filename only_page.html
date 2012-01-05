@@ -10,14 +10,13 @@
   <body>
     <div id="outer_container">
     <div id="body">
-      <form name="f" action="none!">
+      <form name="f" action="javascript:getpass();">
         &#8212; Compute a SHA1 digest &#8212;
         <br/>
         <br/>
-        <input id="crypt" type="password" size="2" name="crypt">
+        <input id="crypt" type="password" name="crypt">
         <input id="message" type="text" size="10" name="message">
-        <br/>
-        <button type="button" onClick="getpass()">Hash it</button>
+        <button type="submit">Hash it</button>
         <br/>
         <br/>
       </form>
