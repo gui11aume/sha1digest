@@ -11,9 +11,7 @@ p {
 
 /* Other stuff */
 
-#outer_container {
-}
-#body {
+#main_div {
   position:absolute;
   width:500px;
   height:100px;
