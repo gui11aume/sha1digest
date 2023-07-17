@@ -2,9 +2,7 @@
 getpass = function() {
   var string = document.f.crypt.value + document.f.message.value;
   var hash = Sha1.hash(string);
-  var start = hash.substring(0,8);
-  var end = hash.substring(8);
-  document.getElementById("hash").innerHTML = "<b>" + start + "</b>" + end;
+  document.getElementById("hash").innerHTML = hash;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
