@@ -32,7 +32,7 @@ source venv/bin/activate
 Then install the requirements with `pip`.
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 # Test the app.
@@ -51,3 +51,6 @@ Use `gcloud` to deploy the app (billing must be enabled).
 ```
 gcloud app deploy --quiet
 ```
+
+You can monitor the versions of the app on the
+[console](https://console.cloud.google.com/appengine/versions?project=sha1digest&serviceId=default).
