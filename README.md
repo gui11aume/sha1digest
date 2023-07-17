@@ -15,6 +15,12 @@ gcloud init
 gcloud auth application-default login
 ```
 
+You may have to set the current project.
+
+```
+gcloud config set project sha1digest
+```
+
 # Install virtual environment
 First create a virtual environment with `venv` and activate it.
 
